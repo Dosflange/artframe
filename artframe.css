@@ -1,0 +1,40 @@
+
+.frame {
+  position: relative;
+  width: 100%;
+  background: dimgray;
+  border-radius: 3px;
+  box-shadow: 0 8px 6px -4px rgba(0, 0, 0, 0.3);
+}
+
+.mat {
+  position: absolute;
+  background: white;
+  background-image: url("cardboard-texture.png");
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.5) inset;
+}
+
+.image {
+  position: absolute;
+}
+
+.image img {
+  width: 100%;
+}
+
+.image:after {
+  content: ''; /* Can't style void attribute */
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+}
+
+.bevel { 
+  border-width:     3px;
+  border-style:     solid;
+  border-color:     rgb(200, 200, 200) rgb(230, 230, 230) rgb(230, 230, 230) rgb(200, 200, 200);
+  }
+
